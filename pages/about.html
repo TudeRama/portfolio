@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="/src/style.css">
+</head>
+<body class="dark:bg-dark">
+    <!-- Header section -->
+    <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
+        <div class="container">
+            <div class="flex items-center justify-between relative">
+                <div class="px-4">
+                    <a href="#hero" class="font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent block py-6 text-lg">Tude Rama</a>
+                </div>
+                <div class="flex items-center px-4">
+                    <button id="hamburger" name="hamburger" type="button" class="block absolute right-4 lg:hidden ">
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-top-left"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out"></span>
+                        <span class="hamburger-line transition duration-300 ease-in-out origin-bottom-left"></span>
+                    </button>
+
+                    <nav id="nav-menu" class="hidden absolute py-5 bg-white dark:bg-dark shadow-lg rounded-lg max-w-[250px] w-full right-4 top-full lg:block lg:max-w-full lg:static lg:bg-transparent lg:rounded-none lg:shadow-none">
+                        <ul class="block lg:flex">
+                            <li class="group">
+                                <a href="index.html" class="text-base font-semibold text-dark py-2 mx-8 group-hover:text-primary flex border-b lg:border-b-0 dark:text-slate-400 dark:border-slate-400">Home</a>
+                            </li>
+                            <li class="group">
+                                <a href="about.html" class="text-base font-semibold text-dark py-2 mx-8 group-hover:text-primary flex border-b lg:border-b-0 dark:text-slate-400 dark:border-slate-400">About</a>
+                            </li>
+                            <li class="group">
+                                <a href="project.html" class="text-base font-semibold text-dark py-2 mx-8 group-hover:text-primary flex border-b lg:border-b-0 dark:text-slate-400 dark:border-slate-400">Project</a>
+                            </li>
+                            <li class="group">
+                                <div class="text-base  text-dark py-2 mx-8 flex border-b lg:border-b-0 dark:text-slate-400 dark:border-slate-400">
+                                    <span class="mr-2">Light</span>
+                                    <input type="checkbox" id="toggle" class="hidden">
+                                    <label for="toggle">
+                                        <div class="flex h-5 w-9 cursor-pointer items-center rounded-full bg-slate-500 p-1">
+                                            <div class="toggle-circle rounded-full h-4 w-4 bg-white transition duration-300 ease-in-out"></div>
+                                        </div>
+                                    </label>
+                                    <span class="ml-2">Dark</span>
+                                </div>
+                            </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+    </header>
+        <!-- About section -->
+        <section id="about" class="pt-36 pb-32">
+            <div class="container">
+                <h4 class="font-bold  text-center  text-dark text-2xl mb-3 dark:text-white">Tentang Saya</h4>
+                <div class="flex flex-wrap">
+                    <div class="w-full px-4 mb-10 lg:w-1/2">
+                        <img src="../src/img/hero1.png" alt="" width="250" class="rounded-full shadow-lg bg-slate-100 mx-auto">
+                        <h2 class="font-bold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-3xl mb-5 max-w-md lg:text-3xl mt-5 mx-auto">I Putu Tude Rama Prasatya</h2>
+                    </div>
+                    <div class="w-full px-4 mb-10 lg:w-1/2 lg:pt-10">
+                        <h3 class="font-semibold bg-gradient-to-r from-blue-500 to-pink-500 bg-clip-text text-transparent text-dark text-3xl mb-4 lg:text-4xl">Mari Berteman</h3>
+                        <p class="font-medium text-base text-slate-500 lg:text-lg ">Saya biasanya dipanggi tude, tud atau de. Saya berasal dari Marga, Tabanan, Bali dan sekarang sedang menempuh pendidikan S1 Ilmu Komputer Di Universitas Pendidikan Ganesha</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+<!-- Footer section -->
+<section id="footer" class="bg-dark">
+    <div class="container py-5 text-slate-300 ">
+        <div class="w-full px-4 text-center">
+            <h1>Develop with ❤ by Tude Rama</h1>
+            <h2>Copyright all reserved 2023</h2>
+        </div>
+    </div>
+</section>
+
+
+</body>
+<script src="/src/script.js"></script>
+</html>
